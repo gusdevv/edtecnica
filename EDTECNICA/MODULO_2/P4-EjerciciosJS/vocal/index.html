@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOCAL, CONSONANTE O NUMERO</title>
+</head>
+<body>
+    <h1>Indicar si es consonante, vocal o un numero</h1>
+    <label for="caracter">Ingresa el carácter a validar</label>
+    <input type="text" id="caracter">
+    <button onclick="Validar()">Validar</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    function Validar(){
+        var caracter = document.getElementById("caracter").value;
+        if(caracter == ''){
+            alert('El campo no puede estar vacío')
+        } else{
+            if(!isNaN(caracter)){
+                alert("El caracter que indicaste " + caracter + " se trata de un número")
+            }else{
+                switch(caracter){
+                    case 'a': case 'e': case 'i': case 'o': case 'u':
+                    alert('El caracter que indicaste '+ caracter+ ' se trata de una vocal');
+                    break;
+                    default: alert('El caracter que indicaste '+ caracter+ ' se trata de una consonante');
+                }
+            }
+        }
+    }
+</script>
+</html>

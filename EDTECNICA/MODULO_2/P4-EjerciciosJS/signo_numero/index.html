@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signo de la Suma</title>
+</head>
+<body>
+    <h1>Signo de la Suma</h1>
+    <div>
+        <p> Las reglas que aplicaremos para este ejercicio son las reglas fundamentales de la suma y la resta:
+            <ol>
+                <li>En una suma algebraica de números con el mismo signo se conserva el signo.</li> 
+                <li>Todo número sumado con el cero tiene como valor el mismo número.</li>
+                <li>Si la suma algebraica es de signos diferentes prevalece el signo del número cuyo valor absoluto sea mayor.</li>
+            </ol>
+        </p>
+    </div><br>
+
+    <div>
+        <label for="numero1Input">Ingresa el primer número:</label>
+        <input type="number" id="numero1Input">
+    </div><br>
+    <div>
+        <label for="numero2Input">Ingresa el segundo número:</label>
+        <input type="number" id="numero2Input">
+    </div><br>
+<div>
+    <button onclick="determinarSigno()">Determinar Signo de la Suma</button>
+    <p id="resultado"></p> 
+</div> 
+</body>
+    <script>
+function determinarSigno() {
+
+  const numero1 = document.getElementById("numero1Input").value;
+  const numero2 = document.getElementById("numero2Input").value;
+
+
+  const num1 = parseInt(numero1);
+  const num2 = parseInt(numero2);
+
+  let resultado = "";
+
+
+  if (num1 > 0 && num2 > 0) {
+    resultado = "Positivo";
+  } else if (num1 < 0 && num2 < 0) {
+    resultado = "Negativo";
+  } else if ((num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0)) {
+
+    if (Math.abs(num1) > Math.abs(num2)) {
+      resultado = "Negativo";
+    } else {
+      resultado = "Positivo";
+    }
+  } else {
+    resultado = "Cero";
+  }
+
+  document.getElementById("resultado").innerHTML = `El signo de la suma es: ${resultado}`;
+}
+    </script>
+</html>
+

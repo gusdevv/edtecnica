@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor maximo</title>
+</head>
+<body>
+    <h1>INDICAR EL MAYOR DE DOS NUMEROS</h1>
+<div>
+    <div>
+        <label for="numero1Input">Ingresa el primer número:</label>
+        <br><input type="number" id="numero1Input">
+    </div><br>
+    <div>
+        <label for="numero2Input">Ingresa el segundo número:</label>
+        <br><input type="number" id="numero2Input">
+    </div><br>
+
+    <button onclick="compararNumeros()">Comparar</button>
+    <p id="resultado"></p>
+</div>
+</body>
+<script>
+function compararNumeros() {
+    var numero1 = parseInt(document.getElementById("numero1Input").value);
+    var numero2 = parseInt(document.getElementById("numero2Input").value);
+
+    var resultado = "";
+
+    if(numero1Input.value=== ''||numero2Input.value === ''){
+        resultado = 'Tiene que llenar ambas casillas con valores numéricos';
+       } else { if (numero1 > numero2) {
+        resultado = numero1 + " es mayor que " + numero2;
+    } else if (numero1 < numero2) {
+        resultado = numero2 + " es mayor que " + numero1;
+    } else {
+        resultado = "Ambos números son iguales";
+    }
+
+        }
+    document.getElementById("resultado").innerText = resultado;
+}
+</script>
+</html>

@@ -1,0 +1,7 @@
+RECURSOS PARA UTILIZAR EN EL PROYECTO TIENDA HTML Y CSS.
+
+VAS A ENCONTRAR:
+
+1. Carpeta img, tiene las imágenes a utilizar para el desarrollo del proyecto, si lo prefieres puedes colocar
+   tus propias imágenes.
+2. El pdf "diseño_pagina_nosotros" contiene el diseño de la página de Nosotros para que lo puedas desarrollar luego.

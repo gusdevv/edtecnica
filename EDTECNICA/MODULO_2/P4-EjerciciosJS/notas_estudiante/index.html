@@ -1,0 +1,39 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+</head>
+    <body>
+        <h1>Calculadora de Notas</h1>
+<div>
+    <form id="formularioNotas">
+        <div>
+            <label for="parcial1">Nota Parcial 1:</label>
+            <input type="number" id="parcial1" step="1" min="0" max="20" required>
+        </div><br>
+       <div>
+            <label for="parcial2">Nota Parcial 2:</label>
+            <input type="number" id="parcial2" step="1" min="0" max="20" required>
+       </div><br>
+       <div>
+            <label for="quices">Nota de Quices:</label>
+            <input type="number" id="quices" step="1" min="0" max="20" required>
+       </div><br>
+       <div>
+            <label for="proyecto1">Nota Proyecto 1:</label>
+            <input type="number" id="proyecto1" step="1" min="0" max="20" required>
+       </div><br>
+       <div>
+            <label for="proyecto2">Nota Proyecto 2:</label>
+            <input type="number" id="proyecto2" step="1" min="0" max="20" required>
+       </div><br>
+       <div>
+        <button type="button" onclick="calcularNota()">Calcular Nota Definitiva</button>
+       </div><br>
+    </form>
+</div>
+     <p id="resultado"></p>
+    </body>
+<script src="./index.js"></script>
+</html>

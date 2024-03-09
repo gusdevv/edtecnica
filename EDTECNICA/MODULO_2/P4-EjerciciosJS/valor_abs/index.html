@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALOR ABSOLUTO</title>
+</head>
+<body>
+    <h1>DETERMINAR EL VALOR ABSOLUTO DE UN NUMERO</h1>
+        <h2>El valor absoluto de un numero es determinado por el número de espacios que recorre en la recta numerica</h2>
+            <h3> Ej: el -2 es un valor negativo, cuyo valor absoluto es 2, ya que el recorrido del 0 al -2 es de (2) unidades en la recta real.</h3>
+    <label for="numeroInput">Ingresa un número</label><br>
+    <input type="number" id="numeroInput">
+    <button onclick="valorAbs()">Determinar</button>
+    <p id="resultado"></p>
+</body>
+
+<script>
+function valorAbs(){
+    var numero = parseFloat(document.getElementById('numeroInput').value)
+
+    if(isNaN(numero)){
+        document.getElementById("resultado").innerHTML= "Ingrese un número."
+    }else{
+        var valorAbsoluto = Math.abs(numero);
+        document.getElementById("resultado").innerText = "El valor absoluto de: " + numero + " es: " + valorAbsoluto}
+}
+
+</script>
+</html>

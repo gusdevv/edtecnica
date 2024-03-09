@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AÑO BISIESTO</title>
+</head>
+    <body>
+        <h1>Indicar si es o no un año bisiesto</h1>
+            <h2>Para determinar si un año es bisiesto debes saber que:</h2>
+            <div>
+                <h3>Un año es bisiesto si:</h3>
+                <ol>
+                    <li>Si es divisible entre 4</li>
+                    <li>Si es divisible entre 4 no puede  ser divisible entre 100</li>
+                    <li>A excepción de que sea divisible entre 400</li>
+                </ol>
+            </div><br>
+            <div>
+                <label for="bisiestoInput">Ingresa un año:</label>
+                <input type="number" id="bisiestoInput">
+                <button onclick="verificarBisiesto()">Determinar</button>
+                <p id="resultado"></p>
+            </div>
+    </body>
+<script src="./index.js"></script>
+</html>
