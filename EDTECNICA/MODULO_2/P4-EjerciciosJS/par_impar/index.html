@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAR O IMPAR</title>
+</head>
+<body>
+    <h1>Indicar si el numero es par o impar</h1>
+    <label for="numero">Ingresa el numero a validar:</label>
+    <input type="number" id="numero">
+    <button onclick="Validar()">Validar</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    function Validar(){
+        var numero = parseInt(document.getElementById("numero").value);
+        var par = (numero % 2===0)
+    if(numero==NaN){
+        alert("Ingrese un caracter válido")
+    }else{
+        if(par){
+        alert("El numero " + numero + " es par");
+    }else{
+        alert("El número " + numero + " es impar");
+    }
+    }    
+    }
+</script>
+</html>

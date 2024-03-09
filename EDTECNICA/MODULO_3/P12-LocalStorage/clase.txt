@@ -1,0 +1,13 @@
+Local Storage
+-------------------------------
+sirve para guardar informacion de forma local para mover la data e ir estructurando 
+-------------------------------
+session Storage
+-------------------------------
+para logins y mantener sesion entre paginas de la misma web
+-------------------------------
+Tambien se almacenas las cookies dentro del local Storage, las cookies sirven para rastrear pequeños fragmentos de informacion dentro de las paginas web
+-------------------------------
+Tambien se almacena la memoria cache
+-----------------------------------
+Conexion con APIS

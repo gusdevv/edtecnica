@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros Star Wars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+           
+            background-color: black;
+        }
+
+        .cabeza{
+            height: 20%;
+        }
+
+        .logo{
+            width: 300px;
+            object-fit: cover ;
+        }
+
+        img {
+            display: block; 
+             margin-left: auto; 
+            margin-right: auto; 
+            margin-top: 3rem;
+        }
+
+        .texto{
+            
+            color: rgb(235, 182, 9);
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif; 
+            width: 100%;
+        }
+
+        .texto-bloque{
+         
+            margin-top: 5%;
+            margin-left: 2%;
+        }
+
+        .fila-fotos{
+            display: flex;
+            width: 100%;
+        }
+
+        .ERA{
+            width: 90%;
+            border-radius: 7px;
+        }
+
+        .foto{
+            width: 40%;
+            background-color: rgb(182, 164, 76);
+            margin: 2%;
+            border-radius: 10px;
+            box-shadow: rgb(214, 195, 101) 0px 7px 29px 0px;
+            
+        }
+
+        .foto1{
+            width: 40%;
+            background-color: rgb(243, 205, 37);
+            margin: 2%;
+            border-radius: 10px;
+            box-shadow: rgb(255, 190, 50) 0px 7px 29px 0px;
+        }
+
+        .foto2{
+            width: 40%;
+            background-color: rgb(0, 62, 121);
+            margin: 2%;
+            border-radius: 10px;
+            box-shadow: rgb(29, 164, 255) 0px 7px 29px 0px;
+        }
+
+        .foto3{
+            width: 40%;
+            background-color: rgb(99, 7, 7);
+            margin: 2%;
+            border-radius: 10px;
+            box-shadow: rgb(255, 0, 0) 0px 7px 29px 0px;
+        }
+
+        .titulo{
+            color: rgb(235, 182, 9);
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0.1%;
+            font-weight: 400;
+        }
+
+       
+
+        .select1 {
+        margin-top: 2%;
+        max-width: 190px;
+        height: 45px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+        position: relative;
+        }
+
+        .select1:valid {
+        border-color: rgb(218, 182, 66);
+        color: #000000;
+        box-shadow: 0px 1px 23px 0px   rgb(255, 243, 201);
+        font-weight: 700;
+        }
+
+
+        .columna {
+            width: 14%;
+            margin-left: 2%;
+        
+        }
+
+        
+
+        .columns{
+            width: 100%;
+            display: flex;
+            margin-top: 2%;
+        
+        }
+
+        .fila-libros{
+            margin-top: 3%;
+        }
+
+        .card-rebellion {
+            width: 330px;
+            height: 450px;
+            margin: 2%;
+            perspective: 1000px;
+            }
+
+            .card-inner-rebellion {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+            }
+
+            .card-rebellion:hover .card-inner-rebellion {
+            transform: rotateY(180deg);
+            }
+
+            .card-front-rebellion,
+            .card-back-rebellion {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            }
+
+            .card-front-rebellion {
+            background-color: rgb(0, 62, 121);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(0deg);
+            }
+
+            .card-back-rebellion {
+            background-color: rgb(0, 62, 121);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+            }
+
+            /* SEPARACION */
+
+            .card-resistance {
+            width: 330px;
+            height: 450px;
+            margin: 2%;
+            perspective: 1000px;
+            }
+
+            .card-inner-resistance {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+            }
+
+            .card-resistance:hover .card-inner-resistance {
+            transform: rotateY(180deg);
+            }
+
+            .card-front-resistance,
+            .card-back-resistance {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            }
+
+            .card-front-resistance {
+            background-color:  rgb(99, 7, 7);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(0deg);
+            }
+
+            .card-back-resistance {
+            background-color:  rgb(99, 7, 7);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+            }
+
+         /* SEPARACION*/
+
+         .card-high-republic {
+            width: 330px;
+            height: 450px;
+            margin: 2%;
+            perspective: 1000px;
+            }
+
+            .card-inner-high-republic {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+            }
+
+            .card-high-republic:hover .card-inner-high-republic {
+            transform: rotateY(180deg);
+            }
+
+            .card-front-high-republic,
+            .card-back-high-republic {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            }
+
+            .card-front-high-republic {
+            background-color: rgb(182, 164, 76);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(0deg);
+            }
+
+            .card-back-high-republic {
+            background-color:  rgb(182, 164, 76);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+            }
+
+            /* SEPARACION */
+
+            .card-republic {
+            width: 330px;
+            height: 450px;
+            margin: 2%;
+            perspective: 1000px;
+            }
+
+            .card-inner-republic {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.999s;
+            }
+
+            .card-republic:hover .card-inner-republic {
+            transform: rotateY(180deg);
+            }
+
+            .card-front-republic,
+            .card-back-republic {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            }
+
+            .card-front-republic {
+            background-color:rgb(243, 205, 37);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(0deg);
+            }
+
+            .card-back-republic {
+            background-color: rgb(243, 205, 37);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+            }
+
+
+        .portada{
+            width: 90%;
+            height: 400px;
+            object-fit: cover;
+            margin-top: 1%;
+            border-radius: 6px;
+        }
+
+        .fila-libros{
+            display: flex;
+        }
+
+    </style>
+
+           
+</head>
+<body>
+
+    <header class="cabeza">
+        <div >
+            <img class="logo" src="img/sw_logo.png">
+        </div>
+    </header>
+
+    <div class="texto-bloque">
+        <p class="texto">Busca la novela de tu preferencia del actual canon de Star wars, esta cronologia esta dividida en las cuatro eras mas importantes de la saga:
+        </p>
+    </div>
+
+    <div class="fila-fotos">
+        <div class="foto">
+            <img class="ERA" src="img/la-alta-republica.webp" >
+        </div>
+
+        <div class="foto1">
+            <img class="ERA" src="img/la-republica-galactica.jpg" >
+        </div>
+
+        <div class="foto2">
+            <img class="ERA" src="img/el-imperio.webp">
+        </div>
+
+        <div class="foto3">
+            <img class="ERA" src="img/la-nueva-republica.webp" >
+        </div>
+    </div>
+
+    
+    <div class="contenedor">
+
+        
+
+        <form id="buscar">
+
+            <div class="columns">
+                <div class="columna">
+                    <label for="Era" class="titulo">Era</label>
+                    <select class="select1" id="Era">
+                        <option value="">Seleccione</option>
+                        <option value="The High Republic">The High Republic</option>
+                        <option value="Age of Republic">Age of Republic</option>
+                        <option value="Age of Rebelion">Age of Rebellion</option>
+                        <option value="Age of Resistence">Age of Resistance</option>
+                    </select>
+                </div>
+
+                <div class="columna">
+                    <label for="Autor" class="titulo">Autor</label>
+                    <select class="select1" id="Autor">
+                        <option value="">Seleccione</option>
+                        <option value="Charles Soule">Charles Soule</option>
+                        <option value="Claudia Gray">Claudia Gray</option>
+                        <option value="Cavan Scott">Cavan Scott</option>
+                        <option value="Justina Ireland">Justina Ireland</option>
+                        <option value="Daniel José Older">Daniel José Older</option>
+                        <option value="Kiersten White">Kiersten White</option>
+                        <option value="E. K. Johnston">E. K. Johnston</option>
+                        <option value="Mike Chen"> Mike Chen</option>
+                        <option value="Christie Golden"> Christie Golden</option>
+                        <option value="James Luceno">James Luceno</option>
+                        <option value="Timothy Zahn">Timothy Zahn</option>
+                        <option value="Paul S. Kemp">Paul S. Kemp</option>
+                        <option value="Rae Carson">Rae Carson</option>
+                        <option value="Beth Revis"> Beth Revis</option>
+                        <option value="John Jackson Miller">John Jackson Miller</option>
+                        <option value="Marjorie Liu">Marjorie Liu</option>
+                        <option value="Alexander Freed">Alexander Freed</option>
+                        <option value="Christie Golden">Christie Golden</option>
+                        <option value="Kevin Hearne">Kevin Hearne</option>
+                        <option value="Sarah Kuhn">Sarah Kuhn</option>
+                        <option value="Chuck Wendig">Chuck Wendig</option>
+                        <option value="Alex Segura">Alex Segura</option>
+                        <option value="Adam Christopher">Adam Christopher</option>
+                        <option value="Kevin Shinick">Kevin Shinick</option>
+                        <option value="Delilah S. Dawson">Delilah S. Dawson</option>
+                        <option value="Alan Dean Foster">Alan Dean Foster</option>
+                        <option value="Jason Fry">Jason Fry</option>
+                        <option value="Justina Ireland">Justina Ireland</option>
+                        <option value="Rebecca Roanhorse">Rebecca Roanhorse</option>
+                        <option value="Zoraida Córdova">Zoraida Córdova</option>
+                    </select>
+                </div>
+
+                
+                <div class="columna">
+                    <label for="Edicion" class="titulo">Edicion</label>
+                    <select class="select1" id="Edicion">
+                    <option value="">Seleccione</option>
+                    </select>
+                </div>
+                
+
+                       
+                <div class="columna">
+                    <label for="Categoria" class="titulo">Categoria</label>
+                    <select class="select1" id="Categoria">
+                        <option value="">Seleccione</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Comedia">Comedia</option>
+                        <option value="Accion">Accion</option>
+                    </select>
+                </div>
+
+                
+                
+                <div class="columna">
+                    <label for="Episodio" class="titulo">Episodio</label>
+                    <select class="select1" id="Episodio">
+                        <option value="">Seleccione</option>
+                        <option value="IX">IX</option>
+                        <option value="IIX">VIII</option>
+                        <option value="VII">VII</option>
+                        <hr>
+                        <option value="VI">VI</option>
+                        <option value="V">V</option>
+                        <option value="IV">IV</option>
+                        <hr>
+                        <option value="III">III</option>
+                        <option value="II">II</option>
+                        <option value="I">I</option>
+                        <hr>
+                        <option value="Antes">A.I</option>
+                    </select>
+                </div>
+
+                                
+                <div class="columna">
+                    <h2 for="ISBN" class="titulo">ISBN</h2>
+                    <input type="search" class="select1" id="ISBN">
+                </div>
+            </div>
+        </form>    
+
+
+
+        <div class="fila-libros">
+
+            <div class="card-rebellion">
+                <div class="card-inner-rebellion">
+                  <div class="card-front-rebellion">
+                    <img class="portada" id="libro-4" src="img/battlefront compañia crepusculo.jpg">
+                  </div>
+                  <div class="card-back-rebellion">
+                    <p class="info-libro" id="4"></p>
+                  </div>
+                </div>
+            </div>
+
+
+            <div class="card-rebellion">
+                <div class="card-inner-rebellion">
+                  <div class="card-front-rebellion">
+                    <img class="portada" id="libro-5" src="img/Battlefront escuadron suicida.webp">
+                  </div>
+                  <div class="card-back-rebellion">
+                    <p class="info-libro" id="5"></p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card-rebellion">
+                <div class="card-inner-rebellion">
+                  <div class="card-front-rebellion">
+                    <img class="portada" id="libro-6" src="img/catalizador.webp">
+                  </div>
+                  <div class="card-back-rebellion">
+                    <p class="info-libro" id="6"></p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card-resistance">
+                <div class="card-inner-resistance">
+                  <div class="card-front-resistance">
+                    <img class="portada" id="libro-7" src="img/consecuencias el fin del imperio.webp">
+                  </div>
+                  <div class="card-back-resistance">
+                    <p class="info-libro" id="7"></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="fila-libros">
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-8" src="img/consecuencias.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="8"></p>
+                      </div>
+                    </div>
+                </div>
+    
+    
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-9" src="img/doctora aphra.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="9"></p>
+                      </div>
+                    </div>
+                </div>
+    
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-10" src="img/dooku-jedi-perdido.jpg">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="10"></p>
+                      </div>
+                    </div>
+                </div>
+    
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-11" src="img/el ascenso de skywalker.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="11"></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="fila-libros">
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-12" src="img/el discipulo oscuro.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="12"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-13" src="img/el precio de la victoria.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="13"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-14" src="img/El_Buscado.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="14"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-15" src="img/El_Coleccionista_de_la_Fuerza-.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="15"></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila-libros">
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-16" src="img/El_Renacer_de_la_Resistencia.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="16"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-17" src="img/El-ascenso del caos.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="17"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-18" src="img/-el-despertar-de-la-fuerza.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="18"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-19" src="img/el-peligro-de-la-reina.webp">
+                      </div>
+                      <div class="card-back-republic">
+                        <p class="info-libro" id="19"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            <div class="fila-libros">
+
+
+                <div class="card-high-republic">
+                    <div class="card-inner-high-republic">
+                      <div class="card-front-high-republic">
+                        <img class="portada" id="libro-20" src="img/en-la.oscuridad.webp">
+                      </div>
+                      <div class="card-back-high-republic">
+                        <p class="info-libro" id="20"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-high-republic">
+                    <div class="card-inner-high-republic">
+                      <div class="card-front-high-republic">
+                        <img class="portada" id="libro-21" src="img/entre-las-sombras.webp">
+                      </div>
+                      <div class="card-back-high-republic">
+                        <p class="info-libro" id="21"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-22" src="img/escuadron alfabeto.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="22"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-23" src="img/Estrellas_Perdidas.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="23"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="fila-libros">
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-24" src="img/GalaxysEdgeBlackSpire.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="24"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-25" src="img/han-solo.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="25"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-26" src="img/heredero de los jedi.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="26"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-high-republic">
+                    <div class="card-inner-high-republic">
+                      <div class="card-front-high-republic">
+                        <img class="portada" id="libro-27" src="img/horizonte-de-media-noche.webp">
+                      </div>
+                      <div class="card-back-high-republic">
+                        <p class="info-libro" id="27"></p>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="fila-libros">
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-28" src="img/la caida de la sombra.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="28"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-29" src="img/LaChispadelaResistencia.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="29"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-30" src="img/la-esperanza de la reina.webp">
+                      </div>
+                      <div class="card-back-republic">
+                        <p class="info-libro" id="30"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-high-republic">
+                    <div class="card-inner-high-republic">
+                      <div class="card-front-high-republic">
+                        <img class="portada" id="libro-31" src="img/la-estrella-caida.jpg">
+                      </div>
+                      <div class="card-back-high-republic">
+                        <p class="info-libro" id="31"></p>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="fila-libros">
+
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-32" src="img/la-hermandad.webp">
+                      </div>
+                      <div class="card-back-republic">
+                        <p class="info-libro" id="32"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-high-republic">
+                    <div class="card-inner-high-republic">
+                      <div class="card-front-high-republic">
+                        <img class="portada" id="libro-33" src="img/la-luz-de-los-jedi.webp">
+                      </div>
+                      <div class="card-back-high-republic">
+                        <p class="info-libro" id="33"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-34" src="img/la-sombra-de-la-reina.webp">
+                      </div>
+                      <div class="card-back-republic">
+                        <p class="info-libro" id="34"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-35" src="img/leia princesa de alderan.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="35"></p>
+                      </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            
+            <div class="fila-libros">
+
+
+                
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-36" src="img/lineas de sangre.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="36"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-37" src="img/lords-sith.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="37"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-38" src="img/maestro-y-aprendiz.webp">
+                      </div>
+                      <div class="card-back-republic">
+                        <p class="info-libro" id="38"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-republic">
+                    <div class="card-inner-republic">
+                      <div class="card-front-republic">
+                        <img class="portada" id="libro-39" src="img/Padawan.webp">
+                      </div>
+                      <div class="card-back-republic">
+                        <p class="info-libro" id="39"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="fila-libros">
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-40" src="img/Phasma.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="40"></p>
+                      </div>
+                    </div>
+                </div>
+
+                
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-41" src="img/PoeDameron.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="41"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-42" src="img/RogueOne.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="42"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-43" src="img/sombra de los sith.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="43"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+            <div class="fila-libros">
+
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-44" src="img/Tarkin.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="44"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-45" src="img/thrawn.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="45"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-46" src="img/Thrawn_Alianzas.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="46"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-47" src="img/Thrawn-traicion.webp">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="47"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="fila-libros">
+
+                <div class="card-high-republic">
+                    <div class="card-inner-high-republic">
+                      <div class="card-front-high-republic">
+                        <img class="portada" id="libro-48" src="img/tormenta-creciente.webp">
+                      </div>
+                      <div class="card-back-high-republic">
+                        <p class="info-libro" id="48"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-49" src="img/ultima oportunidad.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="49"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-resistance">
+                    <div class="card-inner-resistance">
+                      <div class="card-front-resistance">
+                        <img class="portada" id="libro-50" src="img/UnGolpeDelDestino.webp">
+                      </div>
+                      <div class="card-back-resistance">
+                        <p class="info-libro" id="50"></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card-rebellion">
+                    <div class="card-inner-rebellion">
+                      <div class="card-front-rebellion">
+                        <img class="portada" id="libro-51" src="img/un-nuevo-amanecer.jpg">
+                      </div>
+                      <div class="card-back-rebellion">
+                        <p class="info-libro" id="51"></p>
+                      </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+      
+
+    </div>        
+
+    <script src="js/starwars.js"></script>
+    <script src="js/buscador.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

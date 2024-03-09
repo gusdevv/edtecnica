@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador web </title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <h1>Buscador de Libros</h1>
+
+    <div class="contenedor">
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="isbn">ISBN</label>
+                    <input class="u-full-width" id="isbn" type="text" placeholder="Ingrese ISBN">
+                </div>
+                <div class="three columns">
+                    <label for="nombreLibro">Nombre del Libro</label>
+                    <input class="u-full-width" id="nombreLibro" type="text" placeholder="Ingrese Nombre del Libro">
+                </div>
+                <div class="three columns">
+                    <label for="autor">Autor</label>
+                    <input class="u-full-width" id="autor" type="text" placeholder="Ingrese Autor">
+                </div>
+                <div class="three columns">
+                    <label for="edicion">Edición</label>
+                    <select class="u-full-width" id="edicion">
+                        <option value="">Seleccione</option>
+                        <option value="1ra Edición">1ra Edición</option>
+                        <option value="2da Edición">2da Edición</option>
+                        <option value="3ra Edición">3ra Edición</option>
+                        <option value="4ta Edición">4ta Edición</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="categoria">Categoría</label>
+                        <select class="u-full-width" id="categoria">
+                            <option value="">Seleccione</option>
+                            <option value="Novela">Novela</option>
+                            <option value="Fantasía">Fantasía</option>
+                            <option value="Ciencia ficción">Ciencia ficción</option>
+                            <option value="Clásico">Clásico</option>
+                            <option value="Autoayuda">Autoayuda</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <a class="sitio-web">ED Tecnica EG</a>
+
+    <script src="js/db.js"></script>
+    <script src="js/buscador.js"></script>
+</body>
+
+</html>

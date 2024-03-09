@@ -1,0 +1,145 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "nombre": "Pizza pequeña",
+            "precio": 10,
+            "categoria": 1
+        },
+        {
+            "id": 2,
+            "nombre": "Pizza mediana",
+            "precio": 15,
+            "categoria": 1
+        },
+        {
+            "id": 3,
+            "nombre": "Pizza grande",
+            "precio": 20,
+            "categoria": 1
+        },
+        {
+            "id": 4,
+            "nombre": "Cheesecake",
+            "precio": 8,
+            "categoria": 2
+        },
+        {
+            "id": 5,
+            "nombre": "Pie de limón",
+            "precio": 7,
+            "categoria": 2
+        },
+        {
+            "id": 6,
+            "nombre": "Pie de parchita",
+            "precio": 7,
+            "categoria": 2
+        },
+        {
+            "id": 7,
+            "nombre": "Jugo de naranja",
+            "precio": 4,
+            "categoria": 3
+        },
+        {
+            "id": 8,
+            "nombre": "Jugo de parchita",
+            "precio": 4,
+            "categoria": 3
+        },
+        {
+            "id": 9,
+            "nombre": "Limonada",
+            "precio": 10,
+            "categoria": 3
+        },
+        {
+            "id": 7,
+            "nombre": "Jugo de naranja",
+            "precio": 4,
+            "categoria": 3
+        },
+        {
+            "id": 8,
+            "nombre": "Jugo de parchita",
+            "precio": 4,
+            "categoria": 3
+        },
+        {
+            "id": 9,
+            "nombre": "Limonada",
+            "precio": 10,
+            "categoria": 3
+        },
+        {
+            "id": 10,
+            "nombre": "Coca-Cola",
+            "precio": 2,
+            "categoria": 3
+        },
+        {
+            "id": 11,
+            "nombre": "Pollo a la canasta",
+            "precio": 12,
+            "categoria": 4
+        },
+        {
+            "id": 12,
+            "nombre": "Chuleta Ahumada",
+            "precio": 8,
+            "categoria": 4
+        },
+        {
+            "id": 13,
+            "nombre": "Parrilla individual",
+            "precio": 14,
+            "categoria": 4
+        },
+        {
+            "id": 14,
+            "nombre": "Parrilla grande",
+            "precio": 20,
+            "categoria": 4
+        },
+        {
+            "id": 15,
+            "nombre": "Helado de chocolate",
+            "precio": 10,
+            "categoria": 2
+        },
+        {
+            "id": 16,
+            "nombre": "Helado de fresa",
+            "precio": 4,
+            "categoria": 2
+        },
+        {
+            "id": 17,
+            "nombre": "Helado de vainilla",
+            "precio": 4,
+            "categoria": 2
+        },
+        {
+            "id": 18,
+            "nombre": "café pequeño",
+            "precio": 2,
+            "categoria": 5
+        },
+        {
+            "id": 19,
+            "nombre": "café mediano",
+            "precio": 3,
+            "categoria": 5
+        },
+        {
+            "id": 20,
+            "nombre": "Café grande",
+            "precio": 4,
+            "categoria": 5
+        }
+    ],
+    "cliente": [
+        {}
+    ]
+}
