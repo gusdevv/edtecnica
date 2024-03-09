@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Costo de Pizza</title>
+</head>
+<body>
+    <header>
+        <h1>La Pizza Developer - Calculadora de Costo</h1>
+    </header>
+
+    <main>
+        <section id="calculadoraPizza">
+            <form id="formularioPizza">
+                <div>
+                    <label for="tamanioPizza">Tamaño de la Pizza:</label>
+                    <select id="tamanioPizza">
+                        <option value="10">Pequeña (10cm)</option>
+                        <option value="14">Mediana (14cm)</option>
+                        <option value="16">Grande (16cm)</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Ingredientes Extras:</label>
+                    <input type="checkbox" id="champinones" name="ingredientes" value="champinones"> Champiñones
+                    <input type="checkbox" id="jamon" name="ingredientes" value="jamon"> Jamón
+                    <input type="checkbox" id="aceitunas" name="ingredientes" value="aceitunas"> Aceitunas
+                    <input type="checkbox" id="anchoas" name="ingredientes" value="anchoas"> Anchoas
+                    <input type="checkbox" id="salchichon" name="ingredientes" value="salchichon"> Salchichón
+                </div>
+                <div>
+                    <label for="manoDeObra">Costo de Mano de Obra ($):</label>
+                    <input type="number" id="manoDeObra" min="0" step="any">
+                </div>
+                <button type="button" id="calcularCosto">Calcular Costo</button>
+            </form>
+            <div id="resultadoCosto"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 La Pizza Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

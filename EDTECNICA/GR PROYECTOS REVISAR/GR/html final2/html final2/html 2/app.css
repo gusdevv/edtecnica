@@ -1,0 +1,99 @@
+body {
+    background: rgb(5, 5, 53);
+    padding-top: 7.5rem;
+}
+
+.container {
+    background: gray;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 50px;
+
+}
+
+.titulo {
+    text-align: center;
+}
+ 
+.form-contaner {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#boton-input {
+    width: 1rem;
+    padding: 0.25rem;
+    height: 1rem;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 0.5rem;
+}
+
+.lista-tareas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-tareas li {
+    margin: 10px 0;
+   background: rgb(109, 107, 107);
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+
+#input-tarea {
+    width: 1rem;
+    padding: 0.25rem;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 0.5rem;
+
+
+}
+
+#input-check {
+    width: 1rem;
+    padding: 0.25rem;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 0.5rem;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border: solid ;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-tarea {
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.task-list p {
+    border-bottom: 1px solid #ccc; /* para separar visualmente las tareas */
+    margin: 5px 0; /* margen entre cada tarea */
+    padding: 5px; /* padding para dar espacio al texto dentro de cada tarea */
+    white-space: pre-wrap;
+    
+  }
+  .task-list p:focus {
+    outline: none; /* eliminar el contorno al hacer clic en la tarea para que se vea más como un input */
+  }
+  
